@@ -77,8 +77,9 @@ FROM team;
 
 ```text
 id  name                    wins    losses  ties
+
 1   Boston Blue Jays        43	    16	    3
-2   Columbus Cardinals      4	    27	    2
+2   Columbus Cardinals      34      27	    2
 3   Detroit Dodos           44	    15	    2
 4   San Jose Swifts         43	    12	    6
 5   Houston Hummingbirds    38	    18	    2
@@ -101,6 +102,7 @@ FROM player;
 
 ```text
 id  name            team_id
+
 5   D.B. Birch      1
 11  P.J. Willow     1
 12  A.K. Elm        3
