@@ -40,16 +40,18 @@ Result
 <tr>
 <td>
 
-```sql
+<pre>
+<code>
 SELECT *
 FROM division;
-```
+</code>
+</pre>
 
 </td>
 
 <td>
 
-```text
+<pre>
 id  name
 
 1   Atlantic
@@ -58,7 +60,7 @@ id  name
 4   Northwest
 5   Southeast
 6   Pacific
-```
+</pre>
 
 </td>
 </tr>
@@ -66,16 +68,18 @@ id  name
 <tr>
 <td>
 
-```sql
+<pre>
+<code>
 SELECT *
 FROM team;
-```
+</code>
+</pre>
 
 </td>
 
 <td>
 
-```text
+<pre>
 id  name                    wins    losses  ties
 
 1   Boston Blue Jays        43	    16	    3
@@ -83,7 +87,7 @@ id  name                    wins    losses  ties
 3   Detroit Dodos           44	    15	    2
 4   San Jose Swifts         43	    12	    6
 5   Houston Hummingbirds    38	    18	    2
-```
+</pre>
 
 </td>
 </tr>
@@ -91,16 +95,18 @@ id  name                    wins    losses  ties
 <tr>
 <td>
 
-```sql
+<pre>
+<code>
 SELECT *
 FROM player;
-```
+</code>
+</pre>
 
 </td>
 
 <td>
 
-```text
+<pre>
 id  name            team_id
 
 5   D.B. Birch      1
@@ -111,7 +117,7 @@ id  name            team_id
 15  K.W. Maple      4
 37  P.Q. Chestnut   1
 61  A.B. Cherry     1
-```
+</pre>
 
 </td>
 </tr>
@@ -150,7 +156,7 @@ Sort the result in ascending order of losses.
 </td>
 <td>
 
-```text
+<pre>
 id  name                    wins    losses  division_id id  name
 
 4   San Jose Swifts         43      12      6           6   Pacific
@@ -158,7 +164,7 @@ id  name                    wins    losses  division_id id  name
 1   Boston Blue Jays        43      16      3           3   Northeast
 5   Houston Hummingbirds    38      18      2           2   Central
 2   Columbus Cardinals      34      27      2           2   Central
-```
+</pre>
 
 </td>
 </tr>
@@ -178,13 +184,13 @@ column.
 </td>
 <td>
 
-```text
+<pre>
 name        name                wins
 
 Central     Detroit Dodos       44
 Northeast   Boston Blue Jays    43
 Pacific     San Jose Swifts     43
-```
+</pre>
 
 </td>
 </tr>
@@ -202,13 +208,13 @@ HINT: Refine the query from Task #1 and group by the division id.
 </td>
 <td>
 
-```text
+<pre>
 id  name        count
 
 2   Central     3
 3   Northeast   1
 6   Pacific     1
-```
+</pre>
 
 </td>
 </tr>
@@ -222,7 +228,7 @@ Sort the result by player name.
 </td>
 <td>
 
-```text
+<pre>
 name            name
 
 A.B. Cherry     Boston Blue Jays
@@ -233,7 +239,7 @@ K.W. Maple      San Jose Swifts
 P.J. Willow     Boston Blue Jays
 P.Q. Chestnut   Boston Blue Jays
 Z.Z. Oak        Detroit Dodos
-```
+</pre>
 
 </td>
 </tr>
@@ -251,7 +257,7 @@ Sort the result in ascending order of player name.
 </td>
 <td>
 
-```text
+<pre>
 player          team                division
 
 A.B. Cherry     Boston Blue Jays    Northeast    
@@ -260,15 +266,10 @@ F.P. Pine       San Jose Swifts     Pacific
 K.W. Maple      San Jose Swifts     Pacific
 P.J. Willow     Boston Blue Jays    Northeast
 P.Q. Chestnut   Boston Blue Jays    Northeast
-```
+</pre>
 
 </td>
 </tr>
-
-
-
-
-
 
 
 </table>
