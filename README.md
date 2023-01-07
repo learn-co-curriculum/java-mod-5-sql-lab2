@@ -144,13 +144,15 @@ id  name            team_id
 
 <tr>
 <td>
-Task #1: Use an INNER JOIN to combine the rows from the team and division tables.
+Task #1: 
+
+Use an INNER JOIN to combine the rows from the team and division tables.
 Show all columns in the result.
 
 Sort the result in ascending order of losses.
 
 </td>
-<td style="font-size:0.8em">
+<td>
 
 <pre>
 id  name                    wins    losses  division_id id  name
@@ -165,9 +167,19 @@ id  name                    wins    losses  division_id id  name
 </td>
 </tr>
 
+</table>
+
+<table>
+<tr>
+<th>Task</th>
+<th>Expected Result</th>
+</tr>
+
 <tr>
 <td>
-Task #2: Display the division name, team name, and number of wins for
+Task #2: 
+
+Display the division name, team name, and number of wins for
 teams that have at least 40 wins.
 
 Order the result in descending order of wins.
@@ -194,7 +206,9 @@ Pacific     San Jose Swifts     43
 
 <tr>
 <td>
-Task #3: Display the division id, division name, and
+Task #3: 
+
+Display the division id, division name, and
 number of teams per division.
 
 Sort the result in ascending order of division name.
@@ -217,7 +231,9 @@ id  name        count
 
 <tr>
 <td>
-Task #4: Join the player and team tables
+Task #4: 
+
+Join the player and team tables
 and display each player's name, along with their team name.
 
 Sort the result by player name.
@@ -243,7 +259,9 @@ Z.Z. Oak        Detroit Dodos
 
 <tr>
 <td>
-Task #5: Display each player name, team name, and division name (so join all 3 tables),
+Task #5: 
+
+Display each player name, team name, and division name (so join all 3 tables),
 for players in the Northeast or Pacific divisions.
 
 Use the AS keyword to display the columns with aliased names "player", "team", and "division"
