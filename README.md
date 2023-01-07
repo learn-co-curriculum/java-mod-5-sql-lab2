@@ -138,12 +138,8 @@ id  name            team_id
 
 <table>
 <tr>
-<th>
-Task
-</th>
-<th>
-Expected Result
-</th>
+<th>Task</th>
+<th>Expected Result</th>
 </tr>
 
 <tr>
@@ -154,7 +150,7 @@ Show all columns in the result.
 Sort the result in ascending order of losses.
 
 </td>
-<td>
+<td style="font-size:0.8em">
 
 <pre>
 id  name                    wins    losses  division_id id  name
