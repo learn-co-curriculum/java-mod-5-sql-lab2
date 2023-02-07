@@ -136,23 +136,13 @@ id  name            team_id
 
 ![save as](https://curriculum-content.s3.amazonaws.com/6036/sql_lab_1/saveas.png)
 
-<table>
-<tr>
-<th>Task</th>
-<th>Expected Result</th>
-</tr>
+### Task #1
 
-<tr>
-<td>
-Task #1: 
+- Use an INNER JOIN to combine the rows from the team and division tables.
+- Show all columns in the result.
+- Sort the result in ascending order of losses.
 
-Use an INNER JOIN to combine the rows from the team and division tables.
-Show all columns in the result.
-
-Sort the result in ascending order of losses.
-
-</td>
-<td>
+Expected Result:
 
 <pre>
 id  name                    wins    losses  division_id id  name
@@ -164,33 +154,14 @@ id  name                    wins    losses  division_id id  name
 2   Columbus Cardinals      34      27      2           2   Central
 </pre>
 
-</td>
-</tr>
 
-</table>
+### Task #2
 
-<table>
-<tr>
-<th>Task</th>
-<th>Expected Result</th>
-</tr>
+- Display the division name, team name, and number of wins for
+  teams that have at least 40 wins.
+- Order the result in descending order of wins.
 
-<tr>
-<td>
-Task #2: 
-
-Display the division name, team name, and number of wins for
-teams that have at least 40 wins.
-
-Order the result in descending order of wins.
-
-NOTE: pgAdmin does not preface the column headings with the table name,
-but the columns in the result are actually division.name, team.name, and team.wins.
-You can omit the table name when there are no column name conflicts, such as the wins
-column.
-
-</td>
-<td>
+Expected Result:
 
 <pre>
 name        name                wins
@@ -200,23 +171,18 @@ Northeast   Boston Blue Jays    43
 Pacific     San Jose Swifts     43
 </pre>
 
-</td>
-</tr>
+NOTE: pgAdmin does not preface the column headings with the table name,
+but the columns in the result are actually division.name, team.name, and team.wins.
+You can omit the table name when there are no column name conflicts, such as the wins
+column.
 
+### Task #3
 
-<tr>
-<td>
-Task #3: 
+- Display the division id, division name, and number of teams per division.
+- Sort the result in ascending order of division name.
+- HINT: Refine the query from Task #1 and group by the division id.
 
-Display the division id, division name, and
-number of teams per division.
-
-Sort the result in ascending order of division name.
-
-HINT: Refine the query from Task #1 and group by the division id.
-
-</td>
-<td>
+Expected Result:
 
 <pre>
 id  name        count
@@ -226,19 +192,13 @@ id  name        count
 6   Pacific     1
 </pre>
 
-</td>
-</tr>
 
-<tr>
-<td>
-Task #4: 
+### Task #4
 
-Join the player and team tables
-and display each player's name, along with their team name.
+- Join the player and team tables and display each player's name, along with their team name.
+- Sort the result by player name.
 
-Sort the result by player name.
-</td>
-<td>
+Expected Result:
 
 <pre>
 name            name
@@ -253,24 +213,15 @@ P.Q. Chestnut   Boston Blue Jays
 Z.Z. Oak        Detroit Dodos
 </pre>
 
-</td>
-</tr>
+### Task #5
 
+- Display each player name, team name, and division name (so join all 3 tables),
+  for players in the Northeast or Pacific divisions.
+- Use the AS keyword to display the columns with aliased names "player", "team", and "division"
+  (versus name, name, and name).  Don't use double or single quotes to assign the column aliases.
+- Sort the result in ascending order of player name.
 
-<tr>
-<td>
-Task #5: 
-
-Display each player name, team name, and division name (so join all 3 tables),
-for players in the Northeast or Pacific divisions.
-
-Use the AS keyword to display the columns with aliased names "player", "team", and "division"
-(versus name, name, and name).  Don't use double or single quotes to assign the column aliases.
-
-Sort the result in ascending order of player name.
-</td>
-<td>
-
+Expected Result: 
 <pre>
 player          team                division
 
@@ -282,11 +233,6 @@ P.J. Willow     Boston Blue Jays    Northeast
 P.Q. Chestnut   Boston Blue Jays    Northeast
 </pre>
 
-</td>
-</tr>
-
-
-</table>
 
 ## Resources
 
